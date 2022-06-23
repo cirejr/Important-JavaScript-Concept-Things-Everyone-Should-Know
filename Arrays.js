@@ -6,7 +6,7 @@ const fruits = [
   { name: "grape", price: 60 },
 ];
 
-//filter() => filters the array to only include fruits whose price is less than 50
+//filter() => filters the array to only include fruits with price's less than 50
 const filteredFruits = fruits.filter((fruit) => {
   return fruit.price <= 50;
 });
@@ -22,19 +22,19 @@ const FruitNames = fruits.map((fruit) => {
 
 //find() => finds an element in the array
 const foundFruit = fruits.find((fruit) => {
-  return fruit.name === "orange";
+  return fruit.name === "orange"; //This will find the fruit since it exist in our array
 });
 
 //console.log(foundFruit);
 
-//forEach() to apply what we want on each element of the array
+//forEach() applies what we want on each element of the array
 fruits.forEach((fruit) => {
-  //console.log("Name : " + fruit.name);
+  //console.log("Name : " + fruit.name); //in this case it displays every fruit's name
 });
 
-//some() to verify a certain condition in the array -- only returns true or false
+//some() => verifies a certain condition in the array -- only returns true or false
 const hasFreeFruit = fruits.some((fruit) => {
-  return fruit.price <= 0; //this will return false since all the fruits in our initial array has a price
+  return fruit.price <= 0; //this will return false since all the fruits in our initial array have a price
 });
 
 //console.log(hasFreeFruit);
@@ -67,6 +67,8 @@ var searchedNumber = 5;
 const isNumberIncluded = numbers.includes(2 /*searchedNumber*/);
 //console.log(isNumberIncluded);
 
+//push() lets you inject the value or object you specified in the array
+//in case of an object you will need to give the attr and values of the object though
 numbers.push(5);
 //console.log(numbers);
 
